@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlas Global Gayrimenkul | Modern Emlak Çözümleri</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+        <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex-shrink-0">
+                <img src="images/atlas-global-logo.png" alt="Atlas Global Gayrimenkul Logo" class="h-12">
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="index.html" class="text-gray-700 hover:text-gray-900">Anasayfa</a>
+                <a href="index.html#hakkimda" class="text-gray-700 hover:text-gray-900">Hakkımda</a>
+                <div class="relative group">
+                    <button class="flex items-center space-x-1 text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md">
+                        <span>Hizmetler</span>
+                        <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div class="absolute left-0 mt-2 w-64 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                        <a href="alim-satim.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Gayrimenkul Alım-Satım</a>
+                        <a href="kiralama.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Gayrimenkul Kiralama</a>
+                        <a href="yatirim.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Yatırım Danışmanlığı</a>
+                        <a href="expertiz.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Expertiz Değerlendirme</a>
+                    </div>
+                </div>
+                <a href="index.html#iletisim" class="text-gray-700 hover:text-gray-900">İletişim</a>
+                <a href="tel:+905058010644" class="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors">
+                    <i class="fas fa-phone mr-2"></i>0505 801 06 44
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-gray-500 hover:text-gray-700" id="mobile-menu-button">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+
+        <!-- Mobile Navigation -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Anasayfa</a>
+                <a href="index.html#hakkimda" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Hakkımda</a>
+                <div class="relative" id="mobile-services-dropdown">
+                    <button class="w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+                        Hizmetler
+                        <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                    </button>
+                    <div class="hidden bg-gray-50 px-4 py-2">
+                        <a href="alim-satim.html" class="block py-2 text-sm text-gray-700 hover:text-gray-900">Gayrimenkul Alım-Satım</a>
+                        <a href="kiralama.html" class="block py-2 text-sm text-gray-700 hover:text-gray-900">Gayrimenkul Kiralama</a>
+                        <a href="yatirim.html" class="block py-2 text-sm text-gray-700 hover:text-gray-900">Yatırım Danışmanlığı</a>
+                        <a href="expertiz.html" class="block py-2 text-sm text-gray-700 hover:text-gray-900">Expertiz Değerlendirme</a>
+                    </div>
+                </div>
+                <a href="index.html#iletisim" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">İletişim</a>
+                <a href="tel:+905058010644" class="block px-3 py-2 text-base font-medium text-red-600 hover:text-red-700">
+                    <i class="fas fa-phone mr-2"></i>0505 801 06 44
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen" style="background-image: url('https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg'); background-size: cover; background-position: center;">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4 space-y-8">
+            <div class="max-w-3xl">
+                <h1 class="text-5xl font-bold mb-6">Hayalinizdeki Eve Bir Adım Uzaktasınız</h1>
+                <p class="text-xl mb-6">Ilgın Sarı ile profesyonel emlak hizmetleri</p>
+            </div>
+            <div class="mt-8">
+                <img src="https://placehold.co/200x200/404040/FFFFFF/png?text=Ilgin+Sari" alt="Ilgın Sarı" class="w-48 h-48 rounded-full border-4 border-white shadow-lg mx-auto" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Properties Section -->
+    <section class="py-16 px-4 bg-gray-50">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Öne Çıkan Gayrimenkuller</h2>
+            <div id="properties" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Property cards will be injected here dynamically -->
+            </div>
+            <div id="property-error" class="max-w-2xl mx-auto mt-8"></div>
+            <div class="text-center mt-8">
+                <a href="https://atlasglobalgayrimenkul.sahibinden.com/emlak?sorting=storeShowcase&userId=aGjxSYIwIRe9d1vMVRlJ5_g" 
+                   target="_blank" 
+                   class="inline-flex items-center bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition-colors">
+                    <span>Tüm İlanları Gör</span>
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="bg-gray-100 py-16 px-4">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Hizmetlerimiz</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service Card 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-home text-2xl text-red-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-4">Gayrimenkul Alım-Satım</h3>
+                    <p class="text-gray-600 text-center">Profesyonel destek ile güvenli alım-satım işlemleri</p>
+                    <a href="alim-satim.html" class="block text-red-600 text-center mt-4 hover:text-red-700">Detaylı Bilgi</a>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-key text-2xl text-red-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-4">Gayrimenkul Kiralama</h3>
+                    <p class="text-gray-600 text-center">İhtiyacınıza uygun kiralık mülkler</p>
+                    <a href="kiralama.html" class="block text-red-600 text-center mt-4 hover:text-red-700">Detaylı Bilgi</a>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-chart-line text-2xl text-red-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-4">Yatırım Danışmanlığı</h3>
+                    <p class="text-gray-600 text-center">Geleceğe yönelik yatırım stratejileri</p>
+                    <a href="yatirim.html" class="block text-red-600 text-center mt-4 hover:text-red-700">Detaylı Bilgi</a>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-clipboard-check text-2xl text-red-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-4">Expertiz Değerlendirme</h3>
+                    <p class="text-gray-600 text-center">Profesyonel değerleme hizmetleri</p>
+                    <a href="expertiz.html" class="block text-red-600 text-center mt-4 hover:text-red-700">Detaylı Bilgi</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="hakkimda" class="py-16 px-4">
+        <div class="container mx-auto">
+            <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:flex-shrink-0">
+                    <img src="https://placehold.co/200x200/404040/FFFFFF/png?text=Ilgin+Sari" alt="Ilgın Sarı" class="h-full w-full md:w-48 object-cover">
+                    </div>
+                    <div class="p-8">
+                        <h2 class="text-3xl font-bold mb-4">Ilgın Sarı</h2>
+                        <h3 class="text-xl text-gray-600 mb-4">Atlas Global Gayrimenkul'de Broker / Emlak Danışmanı</h3>
+                        <p class="text-gray-600 mb-6">
+                            Ankara'nın Yenibatı, Cumhuriyet Mahallesi ve çevresinde uzun yıllardır gayrimenkul alanında hizmet veriyorum. 
+                            İşimde uzman, sektöre yıllarını vermiş deneyimli bir danışmanım. Müşteri memnuniyetini temel alan yaklaşımım ile 
+                            alım-satım, kiralama ve yatırım danışmanlığı hizmetlerini en üst düzeyde sunuyorum.
+                        </p>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-red-600 mr-2"></i>
+                                <span>Gayrimenkul Alım-Satım</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-red-600 mr-2"></i>
+                                <span>Kiralama Hizmetleri</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-red-600 mr-2"></i>
+                                <span>Değerleme ve Piyasa Analizi</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-red-600 mr-2"></i>
+                                <span>Yatırım Danışmanlığı</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="iletisim" class="bg-gray-100 py-16 px-4">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">İletişim</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <h3 class="text-xl font-semibold mb-6">İletişim Bilgileri</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-phone text-red-600 w-8"></i>
+                                <a href="tel:+905058010644" class="hover:text-red-600">0505 801 06 44</a>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-map-marker-alt text-red-600 w-8"></i>
+                                <p>Tunahan Mah. Dumlupınar 30 Ağustos Cad. Metromall F Blok Kat:20 No:131 Etimesgut / ANKARA</p>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fab fa-instagram text-red-600 w-8"></i>
+                                <a href="https://www.instagram.com/ilgin_sari/" target="_blank" class="hover:text-red-600">@ilgin_sari</a>
+                            </div>
+                        </div>
+                        <div class="mt-8 flex space-x-4">
+                            <a href="https://wa.me/905058010644" target="_blank" class="bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600 transition-colors flex items-center">
+                                <i class="fab fa-whatsapp mr-2"></i>WhatsApp
+                            </a>
+                            <a href="tel:+905058010644" class="bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition-colors flex items-center">
+                                <i class="fas fa-phone mr-2"></i>Ara
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <iframe 
+                            src="https://www.google.com/maps?q=Tunahan+Mah.+Dumlup%C4%B1nar+30+A%C4%9Fustos+Cad.+Metromall+F+Blok+kat:20+no:131+Etimesgut%2FANKARA&amp;output=embed"
+                            class="w-full h-full min-h-[300px] rounded-lg"
+                            frameborder="0"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Action Buttons -->
+    <div class="fixed bottom-6 right-6 flex flex-col space-y-4">
+        <a href="tel:+905058010644" class="bg-red-600 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-red-700 transition-colors">
+            <i class="fas fa-phone"></i>
+        </a>
+        <a href="https://wa.me/905058010644" class="bg-green-500 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition-colors">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/property-fetcher.js"></script>
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Mobile services dropdown toggle
+        document.getElementById('mobile-services-dropdown').addEventListener('click', function(e) {
+            if (e.target.tagName === 'BUTTON') {
+                this.querySelector('div').classList.toggle('hidden');
+            }
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(e) {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            
+            if (!mobileMenu.contains(e.target) && !mobileMenuButton.contains(e.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
